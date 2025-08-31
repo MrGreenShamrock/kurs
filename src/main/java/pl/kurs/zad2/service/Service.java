@@ -39,8 +39,9 @@ public class Service {
     private static boolean isGeometric(int[] sequence) {
         if (sequence[0] == 0) {
             for (int i = 0; i < sequence.length; i++) {
-                if (sequence[i] != 0)
+                if (sequence[i] != 0) {
                     return false;
+                }
             }
         } else {
             double commonRatio = (double) sequence[1] / sequence[0];
